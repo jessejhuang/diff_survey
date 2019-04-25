@@ -35,9 +35,24 @@ alvitta@wustl.edu}
 \maketitle
 
 \begin{abstract}
-This document is a model and instructions for \LaTeX.
-This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
-or Math in Paper Title or Abstract.
+There is ample evidence in the visualization community that individual differences
+matter. These prior works highlight various traits and cognitive abilities that
+can modulate the use of the visualization systems and demonstrate a measurable
+influence on speed, accuracy, process, and attention. Perhaps the most
+important implication of this body of work is that we can use individual differences
+as a mechanism for estimating people’s potential to effectively leverage visual
+interfaces or to identify those people who may struggle. As visual literacy and
+data fluency continue to become essential skills for our everyday lives, we
+must embrace the growing need to understand the factors that divide our
+society, and identify concrete steps for bridging this gap. This paper presents
+the current understanding of how individual differences interact with
+visualization use and draws from recent research in the Visualization,
+Human-Computer Interaction, and Psychology communities. We focus on the
+specific designs and tasks for which there is concrete evidence of performance
+divergence due to individual characteristics. The purpose of this paper is to
+underscore the need to consider individual differences when designing and
+evaluating visualization systems and to call attention to this critical future
+research direction.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -78,7 +93,11 @@ amount of research has evaluated them together. By tracking
 the progression of research for these two groups, and discussing
 their roles in visual analytics interactions, we can more
 accurately discuss the states of other individual differences. 
-% In turn- % talk about less studied traits?
+The other traits we consider include the Big Five personality traits
+of Openness, Conscientiousness, Extraversion, Agreeableness,
+and Neuroticism.
+% talk about how Big 5 are often measured in aggregate, but studies
+% rarely find significant results for each one.
 
 \section{Well-Understood Traits}\label{WellStudied}
 It is worth noting that we define these traits as "well understood"
@@ -90,13 +109,65 @@ multiple traits in conjunction and the traits we label as
 \subsection{Locus of Control}\label{LocusOfControl}
 Locus of Control, the degree to which a person believes they
 have control over their lives, has been studied closely
-within the context of visualization. Green and Fisher's 
-"Towards the Personal Equation of Interaction:
-The Impact of Personality Factors on Visual Analytics Interface
-Interaction" was a seminal work in this effort. In this study,
+within the context of visualization. Green et al's 
+"Using Personality Factors to Predict Interface Learning Performance"
+was a seminal work in this effort. In this study,
 participants were asked to complete personality inventories
-to assess their degrees of locus of control, anxiety, and other
-  
+to assess their degrees of locus of control, anxiety, neuroticism, 
+extraversion, self-regulation, and tolerance of ambigiuty. They then
+familiarized themselves with two visualizations of the same dataset:
+a row-based representaiton, and a pictoral, container-based representaiton.
+Particpants then used these visualizations to answer a series of
+procedural and inferential tasks, and their answers were analyzed with
+respect to each measured personality trait. Significant correlations
+were found for the traits of locus of control and anxiety, specifically that
+those with an external locus of control tended to complete inferential tasks
+more quickly, and those with greater anxiety measures tended to complete
+iterative search tasks more quickly\cite{Green2010UsingPF}. These results suggested that the effects
+of individual traits on visualization interactions varied with the manner and
+purpose of these interactions. 
+
+Since Green et al's study, Locus of control, and
+individual differences in general have been studied with greater attention
+to the precise nature of given visualizations and tasks. Ziemkiewicz et al's 
+2013 study, "How Visualization Layout Relates to Locus of Control and Other
+Personality Factors" assessed both procedural and inferential tasks, while
+also studying individual differences with a more isolated assessment of layout.
+This study evaluated locus of control, neuroticism, and extraversion on
+hierarchical data, with four visualizations of increasingly explicit
+containment metaphors. These metaphors ranged from simple indentations to
+mark hierarchy to series of nested boxes. It found that those with external
+locus of control answered questions on the most and least explicit metaphors
+faster, and performed better than those with internal locus of control in
+general. There were no response time differences observed for those with
+average locus of control. Search tasks also produced no significant differences
+in response time across visualizations and response times \cite{ZiemkiewiczOttley}.
+
+
+
+
+% potential shortcomings of these papers as well
+% next steps: based on what we've seen, what are possible future directions?
+%  as we think about how computers can help users, perhaps openness is a trait
+% that people can look at
+
+% Openness
+% - Visual metaphors show lack of significance
+% - Gajos tests need for cognition: openness is highly correlated with
+% need for cognition, and so further research should explore it
+
+% Agreeableness
+% - Could not find significant results
+% - Most tasks shown do not have an intuitive connection to agreeableness;
+% therefore this absence of significance makes sense
+
+% identify and find behaviors showed different performances than
+% inferential tasks- suggesting that the impact of traits can be very
+% different depending on the task that is asked.
+% since this study, a variety of different tasks across different studies
+% have been evaluated.
+% However, if you look at tasks requested, there is no intuitive connection
+% with agreeableness, so this is why that makes sense
 
 
 % - Also consider that Locus of control is the focus of many
